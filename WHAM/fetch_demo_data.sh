@@ -29,10 +29,10 @@ urle () { [[ "${1}" ]] || return 1; local LANG=C i x; for (( i = 0; i < ${#1}; i
 # rm -rf dataset/body_models/smpl/smpl
 # rm -rf dataset/body_models/smpl.zip
 
-# Auxiliary SMPL-related data
-wget "https://drive.google.com/uc?id=1pbmzRbWGgae6noDIyQOnohzaVnX_csUZ&export=download&confirm=t" -O 'dataset/body_models.tar.gz'
-tar -xvf dataset/body_models.tar.gz -C dataset/
-rm -rf dataset/body_models.tar.gz
+# # Auxiliary SMPL-related data
+# wget "https://drive.google.com/uc?id=1pbmzRbWGgae6noDIyQOnohzaVnX_csUZ&export=download&confirm=t" -O 'dataset/body_models.tar.gz'
+# tar -xvf dataset/body_models.tar.gz -C dataset/
+# rm -rf dataset/body_models.tar.gz
 
 # Checkpoints
 mkdir checkpoints
